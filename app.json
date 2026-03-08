@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Pet Landia Monitoring",
+    "slug": "pet-landia-monitoring",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/petlandiaIcon.png",
+    "scheme": "mymobileapp",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/images/petlandiaIcon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0b1220"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.marcusivan.petlandiamonitoring"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/petlandiaIcon.png",
+        "backgroundColor": "#0b1220"
+      },
+      "package": "com.marcusivan.petlandiamonitoring",
+      "permissions": [
+        "NOTIFICATIONS",
+        "VIBRATE",
+        "INTERNET"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/petlandiaIcon.png",
+          "color": "#007AFF",
+          "sounds": ["./assets/sounds/alarm.mp3"]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e9fc4efd-9f70-4418-970c-e43329d0f9c9"
+      }
+    }
+  }
+}
